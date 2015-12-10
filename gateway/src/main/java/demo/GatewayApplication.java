@@ -63,7 +63,7 @@ public class GatewayApplication {
 
 		@Autowired
 		public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
-			// @formatter:off	
+			// @formatter:off
 			auth.inMemoryAuthentication()
 				.withUser("user").password("password").roles("USER")
 			.and()
